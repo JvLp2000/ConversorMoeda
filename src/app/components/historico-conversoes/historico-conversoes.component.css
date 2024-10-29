@@ -1,0 +1,78 @@
+.tabela-historico {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff; /* Fundo branco */
+}
+
+th {
+    background-color: #66591e; /* Cor marrom para o cabeçalho */
+    color: #1d1616; /* Texto escuro */
+    padding: 12px;
+    text-align: left;
+    font-weight: bold; /* Negrito para o cabeçalho */
+    font-size: 14px; /* Tamanho da fonte para cabeçalho */
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #0a0606; /* Borda inferior para as células */
+    color: #333; /* Texto escuro para maior legibilidade */
+    font-size: 12px; /* Tamanho da fonte para as células */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fundo branco claro para linhas pares */
+}
+
+button {
+    background-color: #66591e; /* Cor marrom para o botão */
+    color: #140909; /* Texto escuro */
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+h3 {
+    color: #201e13; /* Cor marrom para o título */
+    margin-bottom: 10px; /* Margem inferior para o título */
+    font-size: 16px; /* Tamanho da fonte do título */
+}
+
+/* Estilos específicos para visualização em celular */
+@media (max-width: 600px) {
+    .tabela-historico {
+        padding: 10px; /* Adicionar padding em volta da tabela */
+    }
+
+    table, th, td {
+        display: block; /* Transformar a tabela em um layout em bloco */
+        width: 100%; /* Garantir que cada célula ocupe a largura total */
+    }
+
+    th {
+        position: relative; /* Para permitir o uso de pseudo-elementos */
+        padding: 10px; /* Ajustar o padding */
+    }
+
+    td {
+        padding: 10px 0; /* Ajustar o padding das células */
+        border: none; /* Remover a borda inferior em celular */
+        border-bottom: 1px solid #0a0606; /* Adicionar uma borda inferior em celular */
+        text-align: left; /* Garantir que o texto esteja alinhado à esquerda */
+    }
+
+    td:before {
+        content: attr(data-label); /* Usar o atributo data-label para mostrar o nome da coluna */
+        font-weight: bold; /* Negrito para o nome da coluna */
+        display: inline-block; /* Exibir em bloco */
+        width: 100%; /* Garantir que o label ocupe a largura total */
+    }
+}

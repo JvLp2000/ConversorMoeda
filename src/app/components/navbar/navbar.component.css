@@ -1,0 +1,60 @@
+/* Estilos para o componente toolbar */
+.custom-toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 64px;
+  background: linear-gradient(to right, #ad8c30, #ad8c30);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+/* Estilo para o logo */
+.custom-toolbar img {
+  margin-right: 24px;
+  transition: transform 0.2s ease;
+}
+
+.custom-toolbar img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para os botões */
+.custom-toolbar button {
+  margin: 0 8px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border-radius: 4px;
+  padding: 0 16px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.custom-toolbar button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Efeito de destaque no botão ativo */
+.custom-toolbar button.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Media query para responsividade */
+@media (max-width: 600px) {
+  .custom-toolbar {
+    padding: 0 8px;
+  }
+  
+  .custom-toolbar img {
+    height: 40px;
+    margin-right: 12px;
+  }
+  
+  .custom-toolbar button {
+    padding: 0 8px;
+    margin: 0 4px;
+    font-size: 14px;
+  }
+}

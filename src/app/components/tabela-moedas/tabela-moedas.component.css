@@ -1,0 +1,115 @@
+/* Estilos do container principal */
+.container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título */
+h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+/* Estilo do campo de pesquisa */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+/* Estilos da tabela */
+.mat-table {
+  width: 100%;
+  background-color: transparent;
+  box-shadow: none;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+}
+
+/* Cabeçalho da tabela */
+.mat-header-cell {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 16px;
+}
+
+/* Células da tabela */
+.mat-cell {
+  color: #495057;
+  font-size: 14px;
+  padding: 16px;
+}
+
+/* Linhas da tabela */
+.mat-row {
+  transition: background-color 0.2s ease;
+}
+
+.mat-row:hover {
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+/* Estilo alternado das linhas */
+.mat-row:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+/* Paginador */
+.mat-paginator {
+  background-color: transparent;
+  border-top: 1px solid #e9ecef;
+  margin-top: 16px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .mat-header-cell,
+  .mat-cell {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+
+/* Animação de loading */
+.mat-progress-bar {
+  margin-bottom: 16px;
+}
+
+/* Estilo para quando não houver resultados */
+.no-results {
+  text-align: center;
+  padding: 24px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Estilo para o ordenador */
+.mat-sort-header-container {
+  color: #2c3e50;
+}
+
+.mat-sort-header-arrow {
+  color: #6c757d;
+}
