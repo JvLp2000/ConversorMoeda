@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TabelaMoedasComponent } from './tabela-moedas.component';
+import { TabelaMoedasComponent } from './TabelaMoedas.component';
 
 describe('TabelaMoedasComponent', () => {
   let component: TabelaMoedasComponent;

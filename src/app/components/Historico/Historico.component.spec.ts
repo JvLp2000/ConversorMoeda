@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HistoricoConversoesComponent } from './historico-conversoes.component';
+import { HistoricoConversoesComponent } from './Historico.component';
 
 describe('HistoricoConversoesComponent', () => {
   let component: HistoricoConversoesComponent;

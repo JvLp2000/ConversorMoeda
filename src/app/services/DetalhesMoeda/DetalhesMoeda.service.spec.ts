@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { MoedaEnriquecidaService } from './moeda-enriquecida.service';
+import { MoedaEnriquecidaService } from './DetalhesMoeda.service';
 
 describe('MoedaEnriquecidaService', () => {
   let service: MoedaEnriquecidaService;

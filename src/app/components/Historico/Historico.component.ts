@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HistoricoConversoesService } from '../../services/historico-conversao/historico-conversoes.service';
-
+import { HistoricoConversoesService } from '../../services/HistoricoConversao/HistoricoConversao.service';
 @Component({
   selector: 'app-historico-conversoes',
-  templateUrl: './historico-conversoes.component.html',
-  styleUrls: ['./historico-conversoes.component.css']
+  templateUrl: './Historico.component.html',
+  styleUrls: ['./Historico.component.css']
 })
 export class HistoricoConversoesComponent implements OnInit {
   historico: any[] = [];

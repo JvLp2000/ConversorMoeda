@@ -13,17 +13,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { MatOptionModule } from '@angular/material/core';
 import { AppComponent } from './app.component';
-import { TabelaMoedasComponent } from './components/tabela-moedas/tabela-moedas.component';
-import { PaginaInicialComponent } from './components/pagina-inicial/pagina-inicial.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { ConversorMoedasComponent } from './components/conversor-moedas/conversor-moedas.component';
-import { HistoricoConversoesComponent } from './components/historico-conversoes/historico-conversoes.component';
+import { TabelaMoedasComponent } from './components/TabelaMoedas/TabelaMoedas.component';
+import { PaginaInicialComponent } from './components/PaginaInicial/PaginaInicial.component';
+import { NavbarComponent } from './components/Navegacao/Navegacao.component';
+import { ConversorMoedasComponent } from './components/Conversor/Conversor.component';
+import { HistoricoConversoesComponent } from './components/Historico/Historico.component';
 
 const routes: Routes = [
   { path: '', component: PaginaInicialComponent },
-  { path: 'tabela-moedas', component: TabelaMoedasComponent },
-  { path: 'conversor-moedas', component: ConversorMoedasComponent },
-  { path: 'historico-conversoes', component: HistoricoConversoesComponent }
+  { path: 'TabelaMoedas', component: TabelaMoedasComponent },
+  { path: 'Conversor', component: ConversorMoedasComponent },
+  { path: 'Historico', component: HistoricoConversoesComponent }
 ];
 
 @NgModule({

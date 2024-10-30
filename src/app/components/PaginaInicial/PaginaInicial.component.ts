@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pagina-inicial',
-  templateUrl: './pagina-inicial.component.html',
-  styleUrls: ['./pagina-inicial.component.css']
+  selector: 'app-PaginaInicial',
+  templateUrl: './PaginaInicial.component.html',
+  styleUrls: ['./PaginaInicial.component.css']
 })
 export class PaginaInicialComponent {
   title = 'Bem-vindo ao Conversor de Moedas';

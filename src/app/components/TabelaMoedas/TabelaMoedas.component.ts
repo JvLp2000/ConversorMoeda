@@ -2,12 +2,12 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
-import { MoedaEnriquecidaService } from '../../services/detalhes-moeda/moeda-enriquecida.service';
+import { MoedaEnriquecidaService } from '../../services/DetalhesMoeda/DetalhesMoeda.service';
 
 @Component({
   selector: 'app-tabela-moedas',
-  templateUrl: './tabela-moedas.component.html',
-  styleUrls: ['./tabela-moedas.component.css']
+  templateUrl: './TabelaMoedas.component.html',
+  styleUrls: ['./TabelaMoedas.component.css']
 })
 export class TabelaMoedasComponent implements OnInit {
   displayedColumns: string[] = ['codigo', 'nome'];

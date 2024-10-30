@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { ConversorMoedasService } from './conversor-moedas.service';
+import { ConversorMoedasService } from './MoedaConversor.service';
 
 
 describe('ConversorMoedasService', () => {

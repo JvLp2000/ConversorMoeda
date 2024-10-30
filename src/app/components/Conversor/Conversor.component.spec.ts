@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaInicialComponent } from './pagina-inicial.component';
+import { ConversorMoedasComponent } from './Conversor.component';
 
-describe('PaginaInicialComponent', () => {
-  let component: PaginaInicialComponent;
-  let fixture: ComponentFixture<PaginaInicialComponent>;
+describe('ConversorMoedasComponent', () => {
+  let component: ConversorMoedasComponent;
+  let fixture: ComponentFixture<ConversorMoedasComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PaginaInicialComponent]
+      declarations: [ConversorMoedasComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(PaginaInicialComponent);
+    fixture = TestBed.createComponent(ConversorMoedasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

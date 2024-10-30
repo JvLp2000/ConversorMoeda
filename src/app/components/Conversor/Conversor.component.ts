@@ -1,11 +1,10 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { ConversorMoedasService } from '../../services/conversor-moeda/conversor-moedas.service';
-import { HistoricoConversoesService } from '../../services/historico-conversao/historico-conversoes.service';
-
+import { ConversorMoedasService } from '../../services/MoedaConversor/MoedaConversor.service';
+import { HistoricoConversoesService } from '../../services/HistoricoConversao/HistoricoConversao.service';
 @Component({
   selector: 'app-conversor-moedas',
-  templateUrl: './conversor-moedas.component.html',
-  styleUrls: ['./conversor-moedas.component.css']
+  templateUrl: './Conversor.component.html',
+  styleUrls: ['./Conversor.component.css']
 })
 export class ConversorMoedasComponent implements OnInit {
   moedas: any[] = [];
@@ -23,7 +22,7 @@ export class ConversorMoedasComponent implements OnInit {
 
   constructor(
     private conversorMoedasService: ConversorMoedasService,
-    private historicoConversoesService: HistoricoConversoesService
+    private historicoConversaoService: HistoricoConversoesService
   ) {}
 
   ngOnInit(): void {
@@ -63,7 +62,7 @@ export class ConversorMoedasComponent implements OnInit {
             taxa: this.taxaDeCambio ?? 0,
           };
 
-          this.historicoConversoesService.adicionarConversao(conversao);
+          this.historicoConversaoService.adicionarConversao(conversao);
         });
     }
   }
